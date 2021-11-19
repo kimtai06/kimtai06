@@ -1,0 +1,130 @@
+
+body{
+    background: url(../images/bg2.JPG) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.container{
+    text-align: center;
+    font-family: monospace;
+    position: fixed;
+    font-weight: lighter;
+    padding: 120px 50px 50px 10px;
+    margin-left: 8%;
+    margin-right: 3%;
+    z-index: -999;
+}
+.hptittle{
+    color: white;
+    font:menu;
+    font-weight:600;
+    font-size: 3.5vw;
+    text-shadow: 1px 3px 2px black;
+}
+ul{
+    list-style: none;
+    font-weight:bolder;
+}
+a{
+    text-decoration: none;
+}
+.myheader{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: gold;
+}
+#bar{
+    font-size: 4vw;
+    display: none;
+    background-color: gold;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+nav{
+    display: block
+}
+ul#main-menu{
+    display: flex;
+    padding: 10px;
+}
+ul#main-menu a{
+    text-transform: capitalize;
+    padding: 10px 20px;
+    color: black;
+    display: block;
+    font-size: 1.75vw;
+} 
+.hpcontainer{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:lightyellow;
+    font:message-box;
+    font-weight: bolder;
+    font-size: 2.75vw;
+    text-shadow: 1px 3px 2px black;
+}
+.box{
+    display: inline-block;
+}
+dd a{
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 2vw;
+    text-shadow: none;
+    display:flex;
+    background-color: gold;
+    height: 4vw;
+    width: 165px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 15px;
+    padding-bottom: 1px;
+}
+a:hover{
+    text-decoration: underline;
+}
+dd a:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+.logo{
+    width: 10%;
+}
+.contact{
+    position: fixed;
+    top: 40%;
+    z-index: 9999;
+}
+div.contact ul > li{
+    background-color: gold;
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5vw;
+}
+div.contact ul > li:hover{
+    transform: scale(1.2);
+}
+div.contact ul > li a{
+    font-size: 2vw;
+    color: black;
+}
+

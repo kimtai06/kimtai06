@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="themedcafe,cafe,gudentama,GudentamaVN,Dinning">
+        <meta name="description" content="Chiếc cafe với nhân vật chủ đạo là Gudentma">
+        <meta http-equiv="REFRESH" content="3000">
+        <title>GudentamaVN - Cafe & Dinning</title>
+        <link href="https://soranews24.com/wp-content/uploads/sites/3/2017/10/gc-10.png" rel="shortcut icon" />
+        <script src="https://kit.fontawesome.com/18bf94df79.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <link rel="stylesheet" href="css/styleNews1.css" />
+        <link rel="stylesheet" href="css/tabletNews1.css" media="screen and (max-width:900px)" />
+        <link rel="stylesheet" href="css/mobileNews1.css" media="screen and (max-width:500px)" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){
+                $('#bar').click(function(){
+                    $('nav').slideToggle();
+                })
+                $(window).scroll(function(){
+                    if($(this).scrollTop() >= 100){
+                        $("#btt").fadeIn()
+                    }else{
+                        $("#btt").fadeOut()
+                    }
+                })
+                $("#btt").click(function(){
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 1000);
+                })
+                $("#subrbtn").click(function() {
+                    var mail = $("#mail").val()
+                    if(mail != ""){
+                        alert("Đăng ký thành công. Cảm ơn vì đã đăng ký ^.^");
+                    }
+                    else{
+                        alert("Vui lòng nhập email")
+                    }
+                })
+                $(window).scroll(function() {
+                    if($(this).scrollTop() >= 100){
+                        $(".myheader").css({
+                            "background-color": "#f7e549",
+                            "opacity": 0.5
+                        })
+                    }
+                    else{
+                        $(".myheader").css({
+                            "background-color": "gold",
+                            "opacity": 1
+                        })
+                    }
+                })
+            });
+        </script>
+        <div id="wrapper">
+            <header>
+                <div id="bar">
+                    <img class="logo1" src="images/logo.PNG" alt="logo">
+                    <div class="icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="myheader">
+                    <img class="logo" src="images/logo.PNG" alt="logo">
+                    <nav>
+                        <ul id="main-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i>Trang chủ</a></li>
+                            <li><a href="aboutus.html">About us</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="book.html">Đặt bàn</a></li>
+                            <li><a href="news.html">Tin tức</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="cmt.html">Đánh giá</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="contact animate__animated animate__bounceInLeft">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fas fa-phone"></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+
+            </ul>
+        </div>
+        <div id="content" class="container">
+            <h1 class = "newstittle"> -- Tuyển dụng --</h1> 
+            <div class="pic"><img src="images/news_5.JPG" alt="tet"></div>
+            <div class="newscontainer">
+                <p>
+                    Gudetama Cafe & Dinning đang cần tuyển dụng vào các vị trí như sau
+                    <ul class="ds">
+                        <li>Pha chế fulltime: 2 người</li>
+                        <li>Đầu bếp fulltime: 1 người</li>
+                        <li>Phụ bếp parttime: 2 người</li>
+                    </ul>
+                    Yêu cầu:
+                    <div class="longlist">
+                        <p>Tuổi: không giới hạn</p>
+                        <p>Kinh nghiệm: ưu tiên người có kinh nghiệm trong ngành nhà hàng/pha chế hoặc người có các chứng chỉ nghiệp vụ</p>
+                        <p>Thái độ: trung thực, ham học hỏi</p>
+                    </div>
+                    Các chế độ lương thưởng:
+                    <div class="longlist">
+                        <p>Fulltime: 5 - 7 triệu (có thể thương lượng khi phỏng vấn)</p>
+                        <p>Partime: 20.000/ giờ</p>
+                        <p>Thưởng tết, các ngày lễ trong năm: thưởng theo quy định của Nhà nước + KPI của quán</p>
+                    </div>
+                    Ca làm việc parttime (làm tối thiểu 4 buổi trong tuần):
+                    <div class="longlist">
+                        <p>Ca 1A (các ngày trong tuần): 10h đến 15h</p>
+                        <p>Ca 1B (Cuối tuần): 8h đến 12h</p>
+                        <p>Ca 2B (Cuối tuần): 12h30 đến 16h30</p>
+                        <p>Ca 3B (Cuối tuần): 17h đến 22h</p>
+                    </div>
+                    Ca làm việc Fulltime:
+                    <div class="longlist">
+                        <p>Ca 1C (các ngày trong tuần): 10h đến 17h</p>
+                        <p>Ca 2C (các ngày trong tuần): 17h đến 22h</p>
+                        <p>Ca 1D (Cuối tuần): 8h đến 15h30</p>
+                        <p>Ca 2D (Cuối tuần): 15h30 đến 22h</p>
+                    </div>
+                    Ứng tuyển qua hộp thư GudentamaVN@gmail.com
+                    <br>Mọi thắc mắc về thông báo này xin liên hệ sđt 2051052135 hoặc qua địa chỉ mail GudetamaVN@gmail.com
+                </p>
+            </div>
+        </div>
+        <div id="btt">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="subr">
+            <span>Đăng ký để nhận luôn được tin mới nhất </span>
+            <input type="email" placeholder="Nhập email..." id="mail">
+            <input type="button"  value="Đăng ký" id="subrbtn">
+        </div>
+        <div class="myfooter">
+            <footer>
+                <p>
+                    <i class="fas fa-coffee"></i>GudentmaVN - Cafe and Dinning
+                    <br><i class="fas fa-phone"></i> 2051052135
+                    <br><i class="fas fa-envelope"></i>GudetamaVN@gmail.com
+                    <br><i class="fas fa-map-marker-alt"></i>371 Nguyễn Kiệm, phường 3, Q.Gò Vấp, TP.HCM
+                    <br> &copy;Trang wed được thiết kế bởi Cao Nguyên Thụy và Ngô Thị Kim Tài
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

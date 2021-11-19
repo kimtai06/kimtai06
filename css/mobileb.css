@@ -1,0 +1,44 @@
+.logo{
+    display: none;
+}
+.box{
+    display: block;
+    padding-top: 10px;
+}
+header{
+    flex-direction: column;
+    align-items: center;
+}
+ul#main-menu{
+    flex-direction: column;
+    text-align: center;
+}
+#bar{
+    display: block;
+    overflow: auto;
+}
+nav{
+    display: none;
+}
+ul#main-menu a:hover{
+    background-color: honeydew;
+    transition: all;
+}
+#content h1{
+    text-align: center;
+}
+#content p{
+    text-align: justify;
+    font-size: 3vw;
+}
+.form input{
+    padding: 4px 9px;
+    font-size: 2vw;
+}
+.form textarea{
+    width: 79%;
+}
+input[type = radio]{
+    width: 4%;
+}
+

@@ -1,0 +1,174 @@
+
+body{
+    background-color:white;
+}
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.container{
+    text-align: center;
+    font-family: monospace;
+    padding: 130px 50px 50px 10px;
+    margin-top: 0%;
+}
+.newstittle{
+    color:black;
+    font: caption;
+    font-weight: bolder;
+    font-size: 3.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+}
+.myheader{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: gold;
+}
+#bar{
+    font-size: 4vw;
+    display: none;
+    background-color: gold;
+    text-align: center;
+    align-items: center;
+    padding: 6px;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 5px;
+}
+nav{
+    display: block
+}
+ul#main-menu{
+    display: flex;
+    padding: 10px;
+}
+ul#main-menu a{
+    text-transform: capitalize;
+    padding: 10px 20px;
+    color: black;
+    display: block;
+    font-size: 1.75vw;
+} 
+a:hover{
+    text-decoration: underline;
+}
+.newsboxs{
+     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.newsbox img{
+    width: 100%;
+}
+.newsbox a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.newsbox{
+    width: 45%;
+    background-color: gold;
+    font-weight: bolder;
+    font-size: 1.75vw;
+    margin: 2%;
+    padding: 1.75vw;
+    border-radius: 5%;
+    flex-direction:row;
+    margin-left: 24vw;
+    margin-right: 18vw;
+    text-transform: capitalize;
+    display: block;
+}
+footer{
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1vw;
+}
+.myfooter{
+    display: block;
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    background-color: gold;
+}
+#btt{
+    font-size: 2vw;
+    background: gold;
+    color: black;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0.5%;
+    right: 0.5%;
+    border: black solid;
+    cursor: pointer;
+    z-index: 9999;
+}
+.logo{
+    width: 10%;
+}
+.contact{
+    position: fixed;
+    top: 30%;
+    z-index: 9999;
+}
+div.contact ul > li{
+    background-color: gold;
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5vw;
+}
+div.contact ul > li:hover{
+    transform: scale(1.2);
+}
+div.contact ul > li a{
+    font-size: 2vw;
+    color: black;
+}
+div.subr{
+    background-color: #f7e549;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.75vw;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+input{
+    padding: 10px;
+}
+input[type=email]{
+    width: 20vw;
+    margin-left: 0.5vw;
+    font-size: 1.5vw;
+}
+input[type=button]
+{
+    background-color: gold;
+    border: 0.1vw solid black;
+    font-size: 1.25vw;
+}

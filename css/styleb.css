@@ -1,0 +1,224 @@
+body{
+    height: 165%;
+    margin: 0%;
+    background-image: url(../images/book.PNG);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.container{
+    font-family: monospace;
+    margin-top: 7%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1),
+                2px -2px 2px rgba(0, 0, 0, 0.1);
+}  
+#content h1{
+    text-align: center;
+}
+#content p{
+    text-align: center;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.form{
+    margin-left: 18%;
+    font-size: 18px;
+    padding-top: 5px;
+}
+.form input{
+    padding: 8px 15px;
+    width: 75%;
+    margin-top: 10px;
+}
+.form button{
+    width: 80%;
+    background-color:burlywood;
+    color: white;
+    padding: 10px 0px;
+    margin: 6px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form textarea{
+    width: 79%;
+}
+input[type = radio]{
+
+    width: 7%;
+}
+ul{
+    list-style: none;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+}
+.myheader{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: gold;
+}
+#bar{
+    display: none;
+    background-color: gold;
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+}
+nav{
+    display: block
+}
+ul#main-menu{
+    display: flex;
+    padding: 10px;
+}
+ul#main-menu a{
+    text-transform: capitalize;
+    padding: 10px 20px;
+    color: black;
+    display: block;
+    font-size: 1.75vw;
+} 
+.box{
+    display: inline-block;
+}
+footer{
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1vw;
+}
+.myfooter{
+    display: block;
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    background-color: gold;
+}
+#btt{
+    background: gold;
+    color: black;
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0.5%;
+    right: 0.5%;
+    border: black solid;
+    cursor: pointer;
+    z-index: 9999;
+}
+.contact{
+    position: fixed;
+    top: 30%;
+    left: 0%;
+}
+div.contact ul > li{
+    background-color: gold;
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5vw;
+}
+div.contact ul > li:hover{
+    transform: scale(1.2);
+}
+div.contact ul > li a{
+    font-size: 2vw;
+    color: black;
+}
+
+/* -----------------------------------
+------------- RIGHT LAYOUT ----------
+------------------------------------- */
+
+.right-layout {
+    position: fixed;
+    top: 30%;
+    right: 40px;
+}
+
+.right-layout__icon {
+    background-color: gold;
+    border-radius: 50%;
+    width: 6vw;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5vw;
+    transition: scale ease-in 0.5s;
+}
+
+.right-layout__icon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.right-layout__icon i{
+    font-size: 3vw;
+    color: black;
+}
+
+.right-layout__sub-list {
+    user-select: none;
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1),
+                2px -2px 2px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.right-layout__sub-list--no-book {
+    min-height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.right-layout__sub-list--has-book {
+    display: none;
+}
+
+
+.right-layout__sub-list.active {
+    display: block;
+}
+
+.right-layout__sub-item {
+    display: flex;
+    align-items: center ;
+}
+
+.right-layout__sub-item span {
+    min-width: 100px;
+}
+
+.right-layout__sub-item div {
+    flex: 1;
+    text-align: center;
+}
+

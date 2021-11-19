@@ -1,0 +1,152 @@
+html{
+    max-height: 60%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.container{
+    margin: 0px auto;
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+}
+#bar{
+    display: none;
+    background-color: gold;
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+}
+nav{
+    display: block
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.myheader{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: gold;
+}
+ul#main-menu{
+    display: flex;
+    padding: 10px;
+}
+ul#main-menu a{
+    text-transform: capitalize;
+    padding: 10px 20px;
+    color: black;
+    display: block;
+    font-size: 1.75vw;
+}
+#wrapper{
+    max-width: 700px;
+    margin: 0px auto;
+    padding-top: 8%;
+}
+#wrapper h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7e549;
+    padding: 8px 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.accordion-header h3{
+    font-size: 1.5vw;
+}
+.accordion-item.active .accordion-header{
+    background-color: gold;
+    color: black;
+}
+.arrow{
+    transition: all 0.5s;
+}
+.accordion-item.active .arrow{
+    transform: rotate(180deg);
+}
+.accordion-body{
+    padding: 10px 10px;
+    background-color: rgb(228, 228, 228);
+    display: none;
+}
+.accordion-body p{
+    font-size: 1.5vw;
+}
+footer{
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1vw;
+}
+.myfooter{
+    display: block;
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    background-color: gold;
+}
+#btt{
+    background: gold;
+    color: black;
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0.5%;
+    right: 0.5%;
+    border: black solid;
+    cursor: pointer;
+    z-index: 9999;
+}
+.contact{
+    position: fixed;
+    top: 30%;
+    z-index: 9999;
+    margin-left: 0%;
+}
+div.contact ul > li{
+    background-color: gold;
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5vw;
+}
+div.contact ul > li:hover{
+    transform: scale(1.2);
+}
+div.contact ul > li a{
+    font-size: 2vw;
+    color: black;
+}

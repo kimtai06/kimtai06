@@ -1,0 +1,136 @@
+body{
+    background-color:#eeeefdd3;
+    background-image: url(../images/bg4.PNG);
+}
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+footer{
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1vw;
+}
+.myfooter{
+    display: block;
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    background-color: gold;
+}
+.container{
+    text-align: center;
+    font-family: monospace;
+    padding: 150px 50px 70px 0px;
+}
+.mntittle{
+    color:#f7b946;
+    font-family:cursive;
+    font-size: 3.5vw;
+    text-shadow: 1px 3px 2px black;
+    text-align: center;
+}
+.mntittle hr{
+    background-color: #f7b946;
+    border: solid 2px #f7b946;
+}
+ul{
+    list-style: none;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+}
+.myheader{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    background-color: gold;
+    align-items: center;
+}
+#bar{
+    font-size: 4vw;
+    display: none;
+    background-color: gold;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+nav{
+    display: block;
+}
+ul#main-menu{
+    display: flex;
+    padding: 10px;
+}
+ul#main-menu a{
+    text-transform: capitalize;
+    padding: 10px 20px;
+    color: black;
+    display: block;
+    font-size: 1.75vw;
+} 
+.mncontainer{
+    color:black;
+    font:message-box;
+    font-weight:lighter;
+    font-size: 2.5vw;
+}
+.box{
+    display: inline-block;
+}
+a:hover{
+    text-decoration: underline;
+}
+header{
+    z-index: 9999;
+}
+#btt{
+    font-size: 2vw;
+    background: gold;
+    color: black;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0.5%;
+    right: 0.5%;
+    border: black solid;
+    cursor: pointer;
+    z-index: 9999;
+}
+.logo{
+    width: 10%;
+}
+.contact{
+    position: fixed;
+    top: 30%;
+    z-index: 9999;
+}
+div.contact ul > li{
+    background-color: gold;
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5vw;
+}
+div.contact ul > li:hover{
+    transform: scale(1.2);
+}
+div.contact ul > li a{
+    font-size: 2vw;
+    color: black;
+}

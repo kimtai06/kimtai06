@@ -1,0 +1,35 @@
+.logo{
+    display: none;
+}
+.hptittle{
+    text-align: center;
+    padding-left: 30px;
+}
+dd a{
+    padding: auto;
+}
+header{
+    flex-direction: column;
+    align-items: center;
+}
+ul#main-menu{
+    flex-direction: column;
+    text-align: center;
+}
+#bar{
+    display: block;
+    overflow: auto;
+}
+nav{
+    display: none;
+}
+ul#main-menu a:hover{
+    background-color: honeydew;
+    transition: all;
+}
+.logo1{
+    width: 15%;
+}
+.icon{
+    float: right;
+}

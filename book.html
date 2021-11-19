@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="themedcafe,cafe,gudentama,GudentamaVN,Dinning">
+        <meta name="description" content="Chiếc cafe với nhân vật chủ đạo là Gudentma">
+        <meta http-equiv="REFRESH" content="3000">
+        <title>GudentamaVN - Cafe & Dinning</title>
+        <link href="https://soranews24.com/wp-content/uploads/sites/3/2017/10/gc-10.png" rel="shortcut icon" />
+        <script src="https://kit.fontawesome.com/18bf94df79.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styleb.css" />
+        <link rel="stylesheet" href="css/tableabout.css" media="screen and (max-width:900px)" />
+        <link rel="stylesheet" href="css/mobileabout.css" media="screen and (max-width:500px)" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){
+                $("#bar").click(function(){
+                    $("nav").slideToggle();   
+                })
+                $(window).scroll(function(){
+                    if($(this).scrollTop() >= 100){
+                        $('#btt').fadeIn()
+                    }else{
+                        $('#btt').fadeOut()
+                    }
+                })
+                $("#btt").click(function(){
+                    $('html,body').animate({
+                        scrollTop: 0
+                    }, 500);
+                });
+            });
+        </script>
+        <div id="wrapper">
+            <header>
+                <div id="bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="myheader">
+                    <img class="logo" src="images/logo.PNG" alt="logo" width="95vw" height="85vw">
+                    <nav>
+                        <ul id="main-menu">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="aboutus.html">About us</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="book.html">Đặt bàn</a></li>
+                            <li><a href="news.html">Tin tức</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="cmt.html">Đánh giá</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="contact animate__animated animate__bounceInLeft">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="right-layout animate__animated animate__bounceInLeft">
+                <div class="right-layout__icon">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <ul class="right-layout__sub-list">
+                    <div class="right-layout__sub-list--no-book">
+                        Bạn chưa đặt bàn!
+                    </div>
+                    <div class="right-layout__sub-list--has-book">
+                        <li class="right-layout__sub-item">
+                            <span>Tên:</span>
+                            <div>
+                                Nguyễn Văn A
+                            </div>
+                        </li>
+                        <li class="right-layout__sub-item">
+                            <span>SDT:</span>
+                            <div>
+                                0123 123 123
+                            </div>
+                        </li>
+                        <li class="right-layout__sub-item">
+                            <span>Email:</span>
+                            <div>
+                                kimtaivt@gmail.com
+                            </div>
+                        </li>
+                        <li class="right-layout__sub-item">
+                            <span>Ngày:</span>
+                            <div>
+                                01/01/2021
+                            </div>
+                        </li>
+                        <li class="right-layout__sub-item">
+                            <span>Mã đặt bàn:</span>
+                            <div>
+                                #01000000
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div id="content" class="container">
+            <h1>ĐẶT BÀN</h1>
+            <p>Nhằm mục đích cung cấp trải nghiệm tại quán tốt nhất quý khách nếu đi với nhóm trên 7 người/tổ chức tiệc họp mặt, sinh nhật đặc biệt vào các ngày vui lòng đặt bàn</p>
+            <div class="form">
+                <form>
+                    Họ và tên:<br>
+                    <input type="text" name="name"><br>
+                    SĐT:<br>
+                    <input type="text" name="phoneNumber"><br>
+                    Email:<br>
+                    <input type="text" name="email"><br>
+                    Số lượng người lớn:<br>
+                    <input type="number" name="oldNumber" min="0"><br>
+                    Số lượng trẻ em:<br>
+                    <input type="number" name="yNumber" min="0"><br>
+                    Ngày đến:<br>
+                    <input type="date" name="date"><br>
+                    Giờ:<br>
+                    <input type="time" name="hour"><br>
+                    Sự kiện:<br>
+                    <input type="radio" name="event">Liên hoan
+                    <input type="radio" name="event">Họp mặt
+                    <input type="radio" name="event">Sinh nhật
+                    <input type="radio" name="event">Khác
+                    <br>
+                    Ghi chú:<br>
+                    <textarea cols="35" rows="7" placeholder="Ghi chú" name="note"></textarea>
+                    <br><button class="submit-btn" id="bt">Xác nhận</button><br>
+                </form>
+            </div> 
+        </div>
+        <div id="btt">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="myfooter">
+            <footer>
+                <p>
+                    <i class="fas fa-coffee"></i>GudentmaVN - Cafe and Dinning
+                    <br><i class="fas fa-phone"></i>2051050420
+                    <br><i class="fas fa-envelope"></i>GuadetamaVN@gmail.com
+                    <br><i class="fas fa-map-marker-alt"></i>371 Nguyễn Kiệm, Phường 3, Q.Gò Vấp, TPHCM
+                    <br> &copy;Trang web được thiết kế bởi Cao Nguyên Thụy và Ngô Thị Kim Tài
+                </p>
+            </footer>
+        </div>
+
+
+        <script>
+            const rightBtn = document.querySelector('.right-layout__icon')
+            const rightList = document.querySelector('.right-layout__sub-list')
+            const name = document.querySelector('input[name="name"]')
+            const phoneNumber = document.querySelector('input[name="phoneNumber"]')
+            const email = document.querySelector('input[name="email"]')
+            const oldNumber = document.querySelector('input[name="oldNumber"]')
+            const yNumber = document.querySelector('input[name="yNumber"]')
+            const date = document.querySelector('input[name="date"]')
+            const time = document.querySelector('input[name="hour"]')
+            const event = document.querySelector('input[name="event"]')
+            const note = document.querySelector('textarea[name="note"]')
+            const items = document.querySelectorAll('.right-layout__sub-item > div')
+            const submitBtn = document.querySelector('.submit-btn')
+            const form = document.querySelector('form')
+            let flag = 0
+
+            //chặn reload trang
+            form.onsubmit = (e) => {
+                e.preventDefault()
+            }
+
+            submitBtn.onclick = () => {
+                let nameValue = name.value
+                let phoneValue = phoneNumber.value
+                let oldValue = oldNumber.value
+                let yValue = yNumber.value
+                let emailValue = email.value
+                let dateValue = date.value
+                let timeValue = time.value
+                let eventValue = event.value
+                let noteValue = note.value
+
+                if (nameValue && phoneValue && emailValue && dateValue && timeValue) {
+                    const rand = Math.floor(Math.random() * 8999 + 1000)
+                    items[0].innerHTML = nameValue
+                    items[1].innerHTML = phoneValue
+                    items[2].innerHTML = emailValue
+                    items[3].innerHTML = dateValue
+                    items[4].innerHTML = rand
+
+                    name.value = phoneNumber.value = oldNumber.value= yNumber.value = email.value = date.value = time.value = note.value = null
+                    alert('Đặt bàn thành công! \nMọi thắc mắc xin liên hệ qua email: 2051052135thuy@ou.edu.vn \nHoặc qua SĐT:2051050420.')
+                    flag = 1
+                }
+                else {
+                    alert('Bạn chưa nhập thông tin!')
+                }
+            }
+
+            rightBtn.onclick = function(){
+                if (flag) {
+                    document.querySelector('.right-layout__sub-list--no-book').style.display = 'none'
+                    document.querySelector('.right-layout__sub-list--has-book').style.display = 'block'
+                }
+                rightList.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>

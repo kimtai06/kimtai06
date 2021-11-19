@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="themedcafe,cafe,gudentama,GudentamaVN,Dinning">
+        <meta name="description" content="Chiếc cafe với nhân vật chủ đạo là Gudentma">
+        <meta http-equiv="REFRESH" content="3000">
+        <title>GudentamaVN - Cafe & Dinning</title>
+        <link href="https://soranews24.com/wp-content/uploads/sites/3/2017/10/gc-10.png" rel="shortcut icon" />
+        <script src="https://kit.fontawesome.com/18bf94df79.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/stylefaq.css"/>
+        <link rel="stylesheet" href="css/tablefaq.css" media="screen and (max-width:900px)" />
+        <link rel="stylesheet" href="css/mobilefaq.css" media="screen and (max-width:500px)" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body>
+        <script>
+                $(document).ready(function(){
+                    $("#bar").click(function(){
+                        $("nav").slideToggle();   
+                    })
+                    $(window).scroll(function(){
+                        if($(this).scrollTop() >= 100){
+                            $('#btt').fadeIn()
+                        }else{
+                            $('#btt').fadeOut()
+                        }
+                    })
+                    $("#btt").click(function(){
+                        $('html,body').animate({
+                            scrollTop: 0
+                        }, 500);
+                    });
+                });
+            </script>
+            <script>
+                $(window).scroll(function(){
+                    if($(this).scrollTop() >=100){
+                        $(".myheader").css({
+                            "background-color": "#f7e549",
+                            "opacity" :0.5
+                        })
+                    }
+                    else{
+                        $(".myheader").css({
+                            "background-color": "gold",
+                            "opacity" :1
+                        })
+                    }
+                })
+            </script>
+        <script>
+            $(document).ready(function(){
+                $('.accordion-item.active .accordion-body').slideDown();
+                $('.accordion-header').click(function(){
+                    $(this).parent().toggleClass('active');
+                    $(this).parent().children('.accordion-body').slideToggle();
+                });
+            });
+        </script>
+        <div class="container">
+            <header>
+                <div id="bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="myheader">
+                    <img class="logo" src="images/logo.PNG" alt="logo" width="95vw" height="85vw">
+                    <nav>
+                        <ul id="main-menu">
+                            <li><a href="index.html"><i class="fas fa-home"></i>Trang chủ</a></li>
+                            <li><a href="aboutus.html">About us</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="book.html">Đặt bàn</a></li>
+                            <li><a href="news.html">Tin tức</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="cmt.html">Đánh giá</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="contact animate__animated animate__bounceInLeft">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="wrapper">
+            <h1>FAQ</h1>
+            <div class="accordion">
+                <div class="accordion-item active">
+                    <div class="accordion-header">
+                        <h3>Địa chỉ của quán ở đâu vậy?</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        <p>371 Nguyễn Kiệm, Phường 3, Gò Vấp, Thành Phố Hồ Chí Minh.</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61424.727418092276!2d108.3621957!3d15.8015566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e223676081%3A0x5f12225d603ef7c4!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1633424178533!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Quán có bán mang về không?</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Hiện tại quán chỉ bán mang về với các thức uống đóng chai. Còn lại vì không thể đảm bảo được chất lượng và hình thức các món nên chưa bán mang về cho toàn menu, nhưng quán sẽ sớm nghiên cứu cách nha...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Quán có chi nhánh không?</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Hiện tại quán chưa có chi nhánh nha.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Đặt bàn như thế nào vậy?</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Quý khách có thể đặt bàn tại đây: <a href="http://127.0.0.1:5500/book.html">ĐẶT BÀN.</a><br>
+                        + Hoặc qua SĐT: 2051050420<br>
+                        + Hoặc qua Email: GuadetamaVN@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Đặt bàn có cần cọc không?</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Không cần cọc trước nha.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Quán giữ chỗ trong bao lâu vậy?</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Quán chỉ giữ chỗ tong vòng 15ph và sau đó sẽ có người gọi lại xác nhận cho bạn, nhưng nếu trong trường hợp quán quá đông, quán sẽ tự động hủy bàn nha.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Quán có nhận đặt bàn qua facebook không?</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Quán không nhận đặt bàn qua facebook nha, quán chỉ nhận đặt bàn qua mục "Đặt bàn" hoặc qua SĐT hoặc Email.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Hủy đặt bàn như thế nào vậy?</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Quý khách có thể hủy đặt bàn qua SĐT hoặc Email của quán nha.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="btt">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="myfooter">
+            <footer>
+                <p>
+                    <i class="fas fa-coffee"></i>GudentmaVN - Cafe and Dinning
+                    <br><i class="fas fa-phone"></i>2051050420
+                    <br><i class="fas fa-envelope"></i>GuadetamaVN@gmail.com
+                    <br><i class="fas fa-map-marker-alt"></i>371 Nguyễn Kiệm, Phường 3, Q.Gò Vấp, TPHCM
+                    <br> &copy;Trang wed được thiết kế bởi Cao Nguyên Thụy và Ngô Thị Kim Tài
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
