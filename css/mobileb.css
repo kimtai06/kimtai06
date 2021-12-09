@@ -24,6 +24,12 @@ ul#main-menu a:hover{
     background-color: honeydew;
     transition: all;
 }
+.container{
+    max-width: 90%;
+    margin-top: 12%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 #content h1{
     text-align: center;
 }
@@ -32,13 +38,13 @@ ul#main-menu a:hover{
     font-size: 3vw;
 }
 .form input{
-    padding: 4px 9px;
+    padding: 4px 8px;
     font-size: 2vw;
 }
 .form textarea{
     width: 79%;
 }
 input[type = radio]{
-    width: 4%;
+    width: 10px;
 }
 

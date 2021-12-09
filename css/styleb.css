@@ -15,9 +15,9 @@ header{
 }
 .container{
     font-family: monospace;
-    margin-top: 7%;
+    margin-top: 10%;
+    max-width: 960px;
     margin-left: 20%;
-    margin-right: 20%;
     background-color: white;
     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1),
                 2px -2px 2px rgba(0, 0, 0, 0.1);
@@ -38,8 +38,8 @@ header{
 }
 .form input{
     padding: 8px 15px;
-    width: 75%;
-    margin-top: 10px;
+    width: 70%;
+    margin-top: 15px;
 }
 .form button{
     width: 80%;
@@ -91,6 +91,9 @@ ul#main-menu a{
     display: block;
     font-size: 1.75vw;
 } 
+a:hover{
+    text-decoration: underline;
+}
 .box{
     display: inline-block;
 }
@@ -182,7 +185,7 @@ div.contact ul > li a{
 .right-layout__sub-list {
     user-select: none;
     position: absolute;
-    background: #fff;
+    background: #f7e549;
     top: 100%;
     right: 0;
     width: 250px;
@@ -191,6 +194,7 @@ div.contact ul > li a{
     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1),
                 2px -2px 2px rgba(0, 0, 0, 0.1);
     display: none;
+    overflow: auto;
 }
 
 .right-layout__sub-list--no-book {
@@ -200,14 +204,16 @@ div.contact ul > li a{
 }
 
 .right-layout__sub-list--has-book {
-    display: none;
+    display: block;
 }
-
 
 .right-layout__sub-list.active {
     display: block;
 }
-
+.right-layout__closed{
+    right: 0;
+    position: absolute;
+}
 .right-layout__sub-item {
     display: flex;
     align-items: center ;

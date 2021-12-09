@@ -71,6 +71,9 @@ a:hover{
 .newsbox img{
     width: 100%;
 }
+.newsbox img:hover{
+    transform: scale(0.9);
+}
 .newsbox a{
     text-decoration: none;
     color: black;

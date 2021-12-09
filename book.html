@@ -11,8 +11,8 @@
         <script src="https://kit.fontawesome.com/18bf94df79.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/styleb.css" />
-        <link rel="stylesheet" href="css/tableabout.css" media="screen and (max-width:900px)" />
-        <link rel="stylesheet" href="css/mobileabout.css" media="screen and (max-width:500px)" />
+        <link rel="stylesheet" href="css/tableb.css" media="screen and (max-width:900px)" />
+        <link rel="stylesheet" href="css/mobileb.css" media="screen and (max-width:500px)" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
     <body>
@@ -45,7 +45,7 @@
                     <nav>
                         <ul id="main-menu">
                             <li><a href="index.html">Trang chủ</a></li>
-                            <li><a href="aboutus.html">About us</a></li>
+                            <li><a href="aboutuss.html">About us</a></li>
                             <li><a href="menu.html">Menu</a></li>
                             <li><a href="book.html">Đặt bàn</a></li>
                             <li><a href="news.html">Tin tức</a></li>
@@ -72,36 +72,6 @@
                         Bạn chưa đặt bàn!
                     </div>
                     <div class="right-layout__sub-list--has-book">
-                        <li class="right-layout__sub-item">
-                            <span>Tên:</span>
-                            <div>
-                                Nguyễn Văn A
-                            </div>
-                        </li>
-                        <li class="right-layout__sub-item">
-                            <span>SDT:</span>
-                            <div>
-                                0123 123 123
-                            </div>
-                        </li>
-                        <li class="right-layout__sub-item">
-                            <span>Email:</span>
-                            <div>
-                                kimtaivt@gmail.com
-                            </div>
-                        </li>
-                        <li class="right-layout__sub-item">
-                            <span>Ngày:</span>
-                            <div>
-                                01/01/2021
-                            </div>
-                        </li>
-                        <li class="right-layout__sub-item">
-                            <span>Mã đặt bàn:</span>
-                            <div>
-                                #01000000
-                            </div>
-                        </li>
                     </div>
                 </ul>
             </div>
@@ -128,6 +98,7 @@
                     Sự kiện:<br>
                     <input type="radio" name="event">Liên hoan
                     <input type="radio" name="event">Họp mặt
+                    <br>
                     <input type="radio" name="event">Sinh nhật
                     <input type="radio" name="event">Khác
                     <br>
@@ -143,7 +114,7 @@
         <div class="myfooter">
             <footer>
                 <p>
-                    <i class="fas fa-coffee"></i>GudentmaVN - Cafe and Dinning
+                    <i class="fas fa-coffee"></i>GudentamaVN - Cafe and Dinning
                     <br><i class="fas fa-phone"></i>2051050420
                     <br><i class="fas fa-envelope"></i>GuadetamaVN@gmail.com
                     <br><i class="fas fa-map-marker-alt"></i>371 Nguyễn Kiệm, Phường 3, Q.Gò Vấp, TPHCM
@@ -168,7 +139,7 @@
             const items = document.querySelectorAll('.right-layout__sub-item > div')
             const submitBtn = document.querySelector('.submit-btn')
             const form = document.querySelector('form')
-            let flag = 0
+            var flag = 0
 
             //chặn reload trang
             form.onsubmit = (e) => {
@@ -188,23 +159,73 @@
 
                 if (nameValue && phoneValue && emailValue && dateValue && timeValue) {
                     const rand = Math.floor(Math.random() * 8999 + 1000)
-                    items[0].innerHTML = nameValue
-                    items[1].innerHTML = phoneValue
-                    items[2].innerHTML = emailValue
-                    items[3].innerHTML = dateValue
-                    items[4].innerHTML = rand
+                    $(".right-layout__sub-list--has-book").prepend(`
+                    <div>
+                            <li class="right-layout__sub-item">
+                                <div id="del" class="right-layout__closed">
+                                    X
+                                </div>
+                                <br>
+                                <span>Tên:</span>
+                                <div>
+                                    ${nameValue}
+                                </div>
+                            </li>
+                            <li class="right-layout__sub-item">
+                                <span>SDT:</span>
+                                <div>
+                                    ${phoneValue}
+                                </div>
+                            </li>
+                            <li class="right-layout__sub-item">
+                                <span>Email:</span>
+                                <div>
+                                    ${emailValue}
+                                </div>
+                            </li>
+                            <li class="right-layout__sub-item">
+                                <span>Ngày:</span>
+                                <div>
+                                    ${dateValue}
+                                </div>
+                            </li>
+                            <li class="right-layout__sub-item">
+                                <span>Mã đặt bàn:</span>
+                                <div>
+                                    ${rand}
+                                </div>
+                            </li>
+                        </div>
+                    `)
 
                     name.value = phoneNumber.value = oldNumber.value= yNumber.value = email.value = date.value = time.value = note.value = null
                     alert('Đặt bàn thành công! \nMọi thắc mắc xin liên hệ qua email: 2051052135thuy@ou.edu.vn \nHoặc qua SĐT:2051050420.')
-                    flag = 1
+                    flag++;
                 }
                 else {
                     alert('Bạn chưa nhập thông tin!')
                 }
             }
-
+            $(".right-layout__sub-list--has-book").on("click","div#del",function(){
+                $(this).parent().parent().remove()
+                flag--;
+                if (flag == 0) {
+                    document.querySelector('.right-layout__sub-list--no-book').style.display = 'block'
+                    document.querySelector('.right-layout__sub-list--has-book').style.display = 'none'
+                }
+                else
+                {
+                    document.querySelector('.right-layout__sub-list--no-book').style.display = 'none'
+                    document.querySelector('.right-layout__sub-list--has-book').style.display = 'block'
+                }
+            });
             rightBtn.onclick = function(){
-                if (flag) {
+                if (flag == 0) {
+                    document.querySelector('.right-layout__sub-list--no-book').style.display = 'block'
+                    document.querySelector('.right-layout__sub-list--has-book').style.display = 'none'
+                }
+                else
+                {
                     document.querySelector('.right-layout__sub-list--no-book').style.display = 'none'
                     document.querySelector('.right-layout__sub-list--has-book').style.display = 'block'
                 }
