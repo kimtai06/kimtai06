@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="keywords" content="themedcafe,cafe,gudentama,GudentamaVN,Dinning">
+            <meta name="description" content="Chiếc cafe với nhân vật chủ đạo là Gudentma">
+            <meta http-equiv="REFRESH" content="3000">
+            <title>GudentamaVN - Cafe & Dinning</title>
+            <link href="https://soranews24.com/wp-content/uploads/sites/3/2017/10/gc-10.png" rel="shortcut icon" />
+            <script src="https://kit.fontawesome.com/18bf94df79.js" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+            <link rel="stylesheet" href="css/animate.css">
+            <link rel="stylesheet" href="css/styleabouts.css" />
+            <link rel="stylesheet" href="css/tableabout.css" media="screen and (max-width:900px)" />
+            <link rel="stylesheet" href="css/mobileabout.css" media="screen and (max-width:500px)" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        </head>
+        <body>
+            <script>
+                $(document).ready(function(){
+                    $("#bar").click(function(){
+                        $("nav").slideToggle();   
+                    })
+                    $(window).scroll(function(){
+                        if($(this).scrollTop() >= 100){
+                            $('#btt').fadeIn()
+                        }else{
+                            $('#btt').fadeOut()
+                        }
+                    })
+                    $("#btt").click(function(){
+                        $('html,body').animate({
+                            scrollTop: 0
+                        }, 500);
+                    });
+                });
+            </script>
+            <script>
+                $(window).scroll(function(){
+                    if($(this).scrollTop() >=100){
+                        $(".myheader").css({
+                            "background-color": "#f7e549",
+                            "opacity" :0.5
+                        })
+                    }
+                    else{
+                        $(".myheader").css({
+                            "background-color": "gold",
+                            "opacity" :1
+                        })
+                    }
+                })
+            </script>
+            <script src="js/wow.min.js"></script>
+            <script>
+                wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate__animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                wow.init();
+            </script>
+            <script>
+                $(document).ready(function(){
+                    $('.tab-item').hide();
+                    $('.tab-item:first-child').show();
+                    $('.tab-header li').click(function(){
+                        
+                        $('.tab-header li').removeClass('active');
+                        $(this).addClass('active');
+                        
+                        let id_tab_content = $(this).children('a').attr('href');
+                        $('.tab-item').hide();
+                        $(id_tab_content).show();
+                    });
+                });
+            </script>
+            <div id="wrapper">
+                <header>
+                    <div id="bar">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="myheader">
+                        <img class="logo" src="images/logo.PNG" alt="logo" width="95vw" height="85vw">
+                        <nav>
+                            <ul id="main-menu">
+                                <li><a href="index.html"><i class="fas fa-home"></i>Trang chủ</a></li>
+                                <li><a href="aboutus.html">About us</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <li><a href="book.html">Đặt bàn</a></li>
+                                <li><a href="news.html">Tin tức</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="cmt.html">Đánh giá</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <div class="contact animate__animated animate__bounceInLeft">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i></a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div id="banner">
+                </div>
+                <div class="container">
+                        <h1>Cafe trứng lười Guadentama</h1>
+                        <div class="tabs">
+                            <ul class="tab-header">
+                                <li class="active"><a href="#tab_1">Giới thiệu </a></li>
+                                <li><a href="#tab_2">Không gian </a></li>
+                                <li><a href="#tab_3">Món ăn</a></li>
+                            </ul>
+                            <div class="my-tabs">
+                                <div id="tab_1" class="tab-item wow animate__bounceInLeft">
+                                    <h2>Giới thiệu</h2>
+                                    <p>Nhân vật Gudetama của Sanrio hiện đang vô cùng nổi tiếng bởi cá tính lười biếng độc đáo của mình. Chú trứng lười này hoàn toàn không có chút nhiệt tình gì cho bất cứ hoạt động nào kể cả hoạt động thường ngày. Câu cửa miệng của Gudetama là "Darii" (Mệt quá đi) hay "Honto muri dakara" (Hoàn toàn không thể mà). Dù lười biếng nhưng có lẽ nhờ tạo hình hết sức dễ thương và tính cách buồn cười, thú vị, lười "ra mặt" nên Gudetama vẫn có một số lượng lớn fan ở Nhật Bản lẫn thế giới.</p>
+                                    <img src="images/about1.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Trứng lười Gudentama</h3>
+                                    <p>Quán cafe lấy chủ đề Gudentama ra đời đầu tiên tại Osaka, Nhật Bản và đã chiếm được thị hiếu khách hàng. Cafe Gudentama tiếp tục đặt chân tới ở Tokyo sau đó là Singapore và tiếp tục chu du đến Việt Nam trở thành themed cafe đầu tiên ở Việt Nam </p>
+                                    <img src="images/about2.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Bên ngoài quán cafe Gudentama</h3>
+                                    <p>Quán tọa lạc ở "địa chỉ trường" với những chú gudentama luôn chào đón các bạn. Tùy theo số lượng khách tới lui mà quán sẽ có những khung giờ mở cửa khác nhau vào những ngày trong tuần và cuối tuần. Ngoài những dịch vụ bình thường của một tiệm cafe thì ở đây tụi mình còn nhận đặt tiệc liên hoan, sinh nhật,... và còn là chi nhánh bán các Goods chính hãng của Guadentama từ Sanrio.</p>
+                                    <img src="images/about12.JPG" alt="Một số Goods được bày bán">
+                                    <h3>Một số Goods được bày bán</h3>
+                                    <img src="images/about13.JPG" alt="Một số Goods được bày bán">
+                                    <h3>Một số Goods được bày bán</h3>
+                                    <img src="images/about14.JPG" alt="Một số Goods được bày bán">
+                                    <h3>Một số Goods được bày bán</h3>
+                                    <img src="images/about15.JPG" alt="Một số Goods được bày bán">
+                                    <h3>Một số Goods được bày bán</h3>
+                                </div>
+                                <div id="tab_2" class="tab-item wow animate__bounceInLeft">
+                                    <h2>Không gian</h2>
+                                    <p>Không gian và nội thất quán được trang trí theo tông màu vàng sáng, cam và trắng, và tất nhiên, dù bạn nhìn bất cứ hướng nào cũng sẽ bắt gặp Gudentama.  Trên bàn, tường, trần nhà, thực đơn, món ăn,... Gudetama ở khắp mọi nơi! Đặc biệt, đón tiếp bạn một cách "uể oải" ngay lối vào là mô hình các chú Gudetama đáng yêu, thích hợp để chụp ảnh kỉ niệm.</p>
+                                    <img src="images/about3.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Không gian quán Gudentama</h3>
+                                    <img src="images/about4.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Không gian quán Gudentama</h3>
+                                    <p>Không gian quán phù hợp cho đi chơi với các nhóm bạn để có người phụ "check in", nhưng nếu bạn đi một mình thì cũng không sao cả, ở đây tụi mình sẵn sàng giúp cho bạn check in banh quán luôn nho và khuyến mãi thêm một em trứng lười ngồi dí bạn cho đỡ buồn ^.^</p>
+                                    <img src="images/about16.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Không gian quán Gudentama</h3>
+                                    <img src="images/about17.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Không gian quán Gudentama</h3>
+                                    <img src="images/about18.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Không gian quán Gudentama</h3>
+                                    <img src="images/about19.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Không gian quán Gudentama</h3>
+                                </div>
+                                <div id="tab_3" class="tab-item wow animate__bounceInLeft">
+                                    <h2>Món ăn</h2>
+                                    <p>Thực đơn của quán là sự kết hợp giữa ẩm thực truyền thống Nhật Bản và phong cách Tây Âu mang đến sự mới lạ cho khách hàng. Từ các món mặn cho đến thức uống và tráng miệng đều có sự xuất hiện của chú Gudentama.</p>
+                                    <img src="images/about5.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Các món ăn thức uống trong menu</h3>
+                                    <img src="images/about6.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Các món ăn thức uống trong menu</h3>
+                                    <img src="images/about7.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Các món ăn thức uống trong menu</h3>
+                                    <img src="images/about8.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Các món ăn thức uống trong menu</h3>
+                                    <img src="images/about9.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Các món ăn thức uống trong menu</h3>
+                                    <img src="images/about10.JPG" alt="Trứng lười Gudentama">
+                                    <h3>Các món ăn thức uống trong menu</h3>
+                                </div>
+                            </div>  
+                        </div>
+                    <div id="btt">
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                </div>
+                <div class="myfooter">
+                    <footer>
+                        <p>
+                            <i class="fas fa-coffee"></i> GudentamaVN - Cafe and Dinning
+                            <br><i class="fas fa-phone"></i> 2051050420
+                            <br><i class="fas fa-envelope"></i> GuadetamaVN@gmail.com
+                            <br><i class="fas fa-map-marker-alt"></i> 371 Nguyễn Kiệm, Phường 3, Q.Gò Vấp, TPHCM
+                            <br> &copy;Trang web được thiết kế bởi Cao Nguyên Thụy và Ngô Thị Kim Tài
+                        </p>
+                    </footer>
+                </div>
+            </div>
